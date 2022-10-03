@@ -1,0 +1,73 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    padding: 12px 4%;
+    font-size: 0.9rem;
+    color: white;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(74, 74, 74, 0.6), rgba(0, 0, 0, 0));
+    transition: background-color .3s ease-in-out;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    &Black {
+        background-color: #000;
+    }
+    &Burger {
+        cursor: pointer;
+        color: white;
+        margin-right: 1rem;
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+
+    .logo {
+        width: 60px;
+        max-width: 100px;
+    }
+    &Links{
+        margin-left: 20px;
+        transition: background-color .3s ease-in-out;
+        .navlink{
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        @media scream and (min-width:767.98px) {
+            margin-left: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 110%;
+            right: 0;
+            .show & {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: calc(100vh - 60px);
+                top: 60px;
+                background-color: #000;
+            }
+            .navlink{
+                font-size: 1.5rem;
+                padding: 15px 4%;
+            }
+        }
+    }
+    &Actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        .navAction {
+            margin-left: 10px;
+            @media scream and (min-width:768px) {
+                margin-left: 20px;
+            }
+        }
+    }
+}

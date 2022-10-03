@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.row{
+    color: white;
+    padding: 1rem 4%;
+
+    &Title{
+        font-family: 'Nosifer', cursive;
+        font-size: 1.7rem;
+        padding: 0 .5rem;
+
+    }
+    &Images{
+        display: flex;
+        align-items: center;
+        overflow-x: visible ;
+        overflow-y: hidden ;
+        width: 100%;
+        padding: .5rem 0;
+        .rowImage{
+            // height: 300px;
+            width: 300px;
+            padding: 0.5rem;
+            transition: transform 0.3s ease-in;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                
+            }
+
+        }
+   
+    }
+    ::-webkit-scrollbar{
+        -webkit-appearance: none;
+        background-color: #111;
+    }
+}
